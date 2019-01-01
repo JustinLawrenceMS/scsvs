@@ -1,7 +1,7 @@
 <?php
 
 /* there's really no simple way to slurp column headers 
- * out of MySQL, so add them as an array here if you wany.
+ * out of MySQL, so add them as an array here if you want.
  *
 $csvFields = array(
 	"col1",
@@ -48,8 +48,6 @@ $fp = fopen("{$_POST['table']}.csv", 'w');
 for($i=0;$i<count($spreadsheet);$i++)
 {
     fputcsv($fp, $spreadsheet[$i]);
-//    flush();
-//    ob_flush();
 }
 
 fclose($fp);

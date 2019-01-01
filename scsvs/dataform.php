@@ -3,8 +3,6 @@
 </head>
 <body>
 <h1>scsvs: Simple CSV Exporter</h1>
-<!-- I use it because AWS disables CSV export on MySQL and PHP provides a satisfying solution.-->
-
 <form action="exporter.php" method="post">
     <p>
         <input type="text" name="table" placeholder="Enter Table Name" />
@@ -22,7 +20,7 @@
     <p>
 <!-- I used type text for the password.  If you're worried about someone
 looking over your shoulder, change it to type password or skip this file
-and db variables in a config file -->
+and store db variables in a config file -->
         <input type="text" name="password" placeholder="Enter Password" />
     </p>
     <p>
