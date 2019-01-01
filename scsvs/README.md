@@ -12,4 +12,4 @@ This workaround uses fputcsv.
 Not rocket science, but hopefully it helps
 someone.
 
-This was tested on PHP 7.2.13 and MySQL 5.6.
+This was tested on PHP 7.2.13 and MySQL 5.6.23.
