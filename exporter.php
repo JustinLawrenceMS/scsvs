@@ -1,3 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body class="bg-dark">
+
+
 <?php
 
 /* there's really no simple way to slurp column headers 
@@ -53,9 +66,11 @@ for($i=0;$i<count($spreadsheet);$i++)
 fclose($fp);
 
 
-    echo "<p>it's alive</p>";
+    echo '<p class="text-light">It'."'".'s alive</p>';
 
-    echo '<a href="'.$_POST["table"].'.csv">Export</a>';
+    echo '<a href="'.$_POST["table"].'.csv"><button class="btn btn-secondary">Export</button></a>';
 
 
 ?>
+</body>
+</html>
