@@ -1,3 +1,10 @@
+<?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,8 +31,12 @@ $csvFields = array(
 
  */
 
+$database = trim($_POST["database"]);
+$hostname = trim($_POST["hostname"]);
+$username = trim($_POST["username"]);
+$password = trim($_POST["password"]);
 
-$conn = new PDO("mysql:dbname={$_POST["database"]};host={$_POST["hostname"]}", $_POST["username"], $_POST["password"]);
+$conn = new PDO("mysql:dbname=$database;host=$hostname", $username, $password );
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
  
     $stmt = $conn->prepare("select * from {$_POST['table']}");
