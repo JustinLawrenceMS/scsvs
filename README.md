@@ -1,4 +1,7 @@
 # scsvs
+<b>This is a PHP script that runs on Apache2 (nginx is probably fine)
+and it provides an interface for MySQL csv exports.
+</b>
 
 Simple CSVs.
 
@@ -14,6 +17,8 @@ reason for this is that AWS blocks the
 outfile keyword on their RDS servers
 making all kinds of workarounds necessary.
 This workaround uses fputcsv.
+
+Of course, AWS still allows export in tab-delimited format.
 
 Not rocket science, but hopefully it helps
 someone.
