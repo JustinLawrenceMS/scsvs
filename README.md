@@ -1,10 +1,9 @@
 # scsvs
-<b>This is a PHP script that runs on Apache2 (nginx is probably fine)
+This is a PHP script that runs on Apache2 (nginx is probably fine)
 and it provides an interface for MySQL csv exports.
+
+<b>Simple CSVs.
 </b>
-
-Simple CSVs.
-
 First, a word of caution.  This script is 
 intended to be run locally.  If you put 
 this script on a production server you
@@ -18,11 +17,19 @@ outfile keyword on their RDS servers
 making all kinds of workarounds necessary.
 This workaround uses fputcsv.
 
-Of course, AWS still allows export in tab-delimited format.
+FYI, AWS still allows export in tab-delimited format.
+phpMyAdmin has great export options depending on the filesize 
+of your dataset, but again, working locally is more secure.
 
-Not rocket science, but hopefully it helps
+Future goal is to add data chunking. It already worked on a 40mb table with 8g memory.  It exhausted memory on a 250mb table.
+
+
+I left placeholders for the programmer to add their own
+embelishments.
+
+Hopefully this helps
 someone.
 
-This was tested on PHP 7.2.13 and MySQL 5.6.23.
+It was tested on PHP 7.2.13 and MySQL 5.6.23.
 
 It was tested successfully on xampp and LAMP.
