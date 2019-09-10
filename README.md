@@ -33,3 +33,5 @@ someone.
 It was tested on PHP 7.2.13 and MySQL 5.6.23.
 
 It was tested successfully on xampp and LAMP.
+
+To install, <code>cd /path/to/public_html</code> then <code>git clone https://github.com/JustinLawrenceMS/scsvs.git</code>
